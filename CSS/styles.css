@@ -540,11 +540,23 @@ img {
 }
 
 /* PORTFOLIO */
-.gallery .filter-btn.current {
+.gallery .filter__btn.current {
   color: var(--secondary-txt-cl);
   background-color: var(--accent-cl);
 }
-.filter-btn {
+.filter__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.filter__item {
+  margin-right: 8px;
+}
+.filter__item:last-child {
+  margin-right: 0px;
+}
+.filter__btn {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
@@ -553,64 +565,39 @@ img {
   background-color: #f5f4fa;
   padding: 6px 22px;
 }
-.filter-list {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 50px;
-}
-.filter-item {
-  margin-right: 8px;
-}
-.filter-item:last-child {
-  margin-right: 0px;
-}
-.projects-list {
+
+.projects__list {
   display: flex;
   flex-wrap: wrap;
 }
-.projects-item {
+.projects__item {
   margin-right: 30px;
   margin-bottom: 30px;
 }
-.projects-item:nth-child(3n) {
+.projects__item:nth-child(3n) {
   margin-right: 0px;
 }
-.projects-item:nth-last-child(-n + 3) {
+.projects__item:nth-last-child(-n + 3) {
   margin-bottom: 0px;
 }
-.project-description {
-  padding: 20px 24px;
-  background: #ffffff;
-  border: 1px solid #eeeeee;
-}
-.project-title {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-}
-.project-type {
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.03em;
-  color: #757575;
-}
-.project-link {
+.project__link {
   display: block;
   transition: box-shadow var(--hov-focus);
 }
-.project-link:hover,
-.project-link:focus {
+.project__link:hover,
+.project__link:focus {
   box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 1px 4px rgba(0, 0, 0, 0.06);
 }
-.project-link:hover .animation-description,
-.project-link:focus .animation-description {
+.project__link:hover .project__description,
+.project__link:focus .project__description {
   transform: translateY(-100%);
   opacity: 1;
 }
-
-.animation-description {
+.project__card {
+  position: relative;
+  overflow: hidden;
+}
+.project__description {
   display: block;
   font-size: 18px;
   line-height: 1.56;
@@ -624,9 +611,23 @@ img {
   transition: transform var(--hov-focus), opacity var(--hov-focus);
   opacity: 0;
 }
-.animation-card {
-  position: relative;
-  overflow: hidden;
+
+.project__exposition {
+  padding: 20px 24px;
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+}
+.project__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.project__type {
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: #757575;
 }
 
 /* Модальное окно */
