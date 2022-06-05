@@ -1,8 +1,12 @@
 // utils
-@import "./utils/variables";
-@import "./utils/visually-hidden";
+@import "./utils/utils";
 
 // base
-@import "./base/common";
-@import "./base/container";
+@import "./base/base";
+
+//components
+@import "./components/button";
+@import "./components/logo";
+
+//layouts
 @import "./base/reset";
