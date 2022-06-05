@@ -536,6 +536,42 @@ img {
   margin-right: 10px;
 }
 
+.gallery .filter__btn.current {
+  color: var(--secondary-txt-cl);
+  background-color: var(--accent-cl);
+}
+
+.filter__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 50px;
+}
+
+.filter__item {
+  margin-right: 8px;
+}
+
+.filter__item:last-child {
+  margin-right: 0px;
+}
+
+.filter__btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+  letter-spacing: 0.03em;
+  background-color: #f5f4fa;
+  padding: 6px 22px;
+}
+
 .header {
   border-bottom: 1px solid #ececec;
 }
@@ -579,11 +615,15 @@ img {
   transition: color var(--hov-focus);
 }
 
-.navigation__link.current {
+.navigation__link:hover, .navigation__link:focus {
   color: var(--accent-cl);
 }
 
-.navigation__link.current::after {
+.navigation__link--current {
+  color: var(--accent-cl);
+}
+
+.navigation__link--current::after {
   content: '';
   display: block;
   width: 100%;
@@ -593,10 +633,6 @@ img {
   position: absolute;
   bottom: 0;
   left: 0;
-}
-
-.navigation__link:hover, .navigation__link:focus {
-  color: var(--accent-cl);
 }
 
 .contacts__list {
@@ -662,6 +698,8 @@ img {
 }
 
 .hero__title {
+  margin-left: auto;
+  margin-right: auto;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -972,42 +1010,6 @@ img {
   text-transform: uppercase;
   color: var(--secondary-txt-cl);
   margin-bottom: 20px;
-}
-
-.gallery .filter__btn.current {
-  color: var(--secondary-txt-cl);
-  background-color: var(--accent-cl);
-}
-
-.filter__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 50px;
-}
-
-.filter__item {
-  margin-right: 8px;
-}
-
-.filter__item:last-child {
-  margin-right: 0px;
-}
-
-.filter__btn {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.63;
-  text-align: center;
-  letter-spacing: 0.03em;
-  background-color: #f5f4fa;
-  padding: 6px 22px;
 }
 
 .projects__list {

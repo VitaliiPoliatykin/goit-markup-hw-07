@@ -1,12 +1,11 @@
 // utils
-@import "./utils/utils";
+@import "./utils/module";
 
 // base
-@import "./base/base";
+@import "./base/module";
 
 //components
-@import "./components/components";
+@import "./components/module";
 
 //layouts
-@import "./layouts/index";
-@import "./layouts/portfolio/portfolio"
+@import "./layouts/module";
