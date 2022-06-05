@@ -5,8 +5,8 @@
 @import "./base/base";
 
 //components
-@import "./components/button";
-@import "./components/logo";
+@import "./components/components";
 
 //layouts
-@import "./base/reset";
+@import "./layouts/index";
+@import "./layouts/portfolio/portfolio"
