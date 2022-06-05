@@ -106,10 +106,6 @@ img {
   margin-right: 0px;
 }
 
-.footer-link:hover,
-.footer-link:focus {
-  color: var(--accent-cl);
-}
 /* Header */
 .header {
   border-bottom: 1px solid #ececec;
@@ -168,7 +164,7 @@ img {
   margin-right: 30px;
   align-items: center;
 }
-.contacts-item:last-child {
+.contacts__item:last-child {
   margin-right: 0px;
 }
 .contacts__link {
